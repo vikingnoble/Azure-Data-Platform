@@ -8,23 +8,23 @@ The following Azure services will be deployed in your subscription:
 
 Name                        | Type | Pricing Tier | Pricing Info |
 ----------------------------|------|--------------|--------------|
-ADPDatabricks-*suffix*      | Azure Databricks Service | Standard | https://azure.microsoft.com/en-us/pricing/details/databricks/
-SynapseDataFactory-*suffix*	    | Data factory (V2) | Data pipelines | https://azure.microsoft.com/en-us/pricing/details/data-factory/
-ADPEventHubs-*suffix*       | Event Hubs Namespace | Standard | https://azure.microsoft.com/en-us/pricing/details/event-hubs/
-ADPLogicApp	                | Logic app | | https://azure.microsoft.com/en-au/pricing/details/logic-apps/
-SynapseDW                   | Azure Synapse Analytics | DW200c | https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/gen2/
-NYCDataSets                   | SQL database | Standard S1 | https://azure.microsoft.com/en-au/pricing/details/sql-database/single/
+ADPDatabricks-*suffix*      | Azure Databricks Service | Standard | [link](https://azure.microsoft.com/en-us/pricing/details/databricks/)
+SynapseDataFactory-*suffix*	    | Data factory (V2) | Data pipelines | [link](https://azure.microsoft.com/en-us/pricing/details/data-factory/)
+ADPEventHubs-*suffix*       | Event Hubs Namespace | Standard | [link](https://azure.microsoft.com/en-us/pricing/details/event-hubs/)
+ADPLogicApp	                | Logic app | | [link](https://azure.microsoft.com/en-au/pricing/details/logic-apps/)
+SynapseDW                   | Azure Synapse Analytics | DW200c | [link](https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/gen2/)
+NYCDataSets                   | SQL database | Standard S1 | [link](https://azure.microsoft.com/en-au/pricing/details/sql-database/single/)
 synapsesql-*suffix*| SQL server || 
 operationalsql-*suffix*| SQL server || 
-synapsedatalake*suffix*	        | Azure Data Lake Storage Gen2 || https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/
-SynapseStreamAnalytics-*suffix*	| Stream Analytics job | 3 SU | https://azure.microsoft.com/en-us/pricing/details/stream-analytics/
-ADPDesktop	                | Virtual machine | A4 v2 | https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/
-ADPDesktop_OsDisk	        | Disk | E10 | https://azure.microsoft.com/en-us/pricing/details/managed-disks/
+synapsedatalake*suffix*	        | Azure Data Lake Storage Gen2 || [link](https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/)
+SynapseStreamAnalytics-*suffix*	| Stream Analytics job | 3 SU | [link](https://azure.microsoft.com/en-us/pricing/details/stream-analytics/)
+ADPDesktop	                | Virtual machine | A4 v2 | [link](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/)
+ADPDesktop_OsDisk	        | Disk | E10 | [link](https://azure.microsoft.com/en-us/pricing/details/managed-disks/)
 ADPDesktop-nic	            | Network interface ||
-ADPDesktop-publicip	        | Public IP address || https://azure.microsoft.com/en-us/pricing/details/ip-addresses/
-ADPVirtualNetwork	        | Virtual network || https://azure.microsoft.com/en-us/pricing/details/virtual-network/
-ADPIntegrationAccount       | Integration Account | Basic | https://azure.microsoft.com/en-au/pricing/details/logic-apps/
-ADPBastionHost              | Bastion | | https://azure.microsoft.com/en-au/pricing/details/azure-bastion/
+ADPDesktop-publicip	        | Public IP address || [link](https://azure.microsoft.com/en-us/pricing/details/ip-addresses/)
+ADPVirtualNetwork	        | Virtual network || [link](https://azure.microsoft.com/en-us/pricing/details/virtual-network/)
+ADPIntegrationAccount       | Integration Account | Basic | [link](https://azure.microsoft.com/en-au/pricing/details/logic-apps/)
+ADPBastionHost              | Bastion | | [link](https://azure.microsoft.com/en-au/pricing/details/azure-bastion/)
 
 
  <br>**IMPORTANT**: When you deploy the lab resources in your own subscription you are responsible for the charges related to the use of the services provisioned. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
@@ -32,13 +32,13 @@ ADPBastionHost              | Bastion | | https://azure.microsoft.com/en-au/pric
 The estimated time to complete this lab is: 30 minutes.
 
 ## Prepare your Azure subscription
-In this section you will use the Azure Portal to create a Resource Group that will host the Azure Data Services used in labs 1 through to 5.
+In this section you will use the Azure Portal to create a Resource Group that will host the Azure Data Services used in labs 1 through to 4.
 
 **IMPORTANT**|
 -------------|
 **Execute these steps on your host computer**|
 
-1.	Open the browser and navigate to https://portal.azure.com
+1.	Open the browser and navigate to <https://portal.azure.com>
 
     ![](./Media/Lab0-Image01.png)
 
