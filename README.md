@@ -1,4 +1,4 @@
-# Azure Data Platform End2End (V2)
+# Petronas Data Academy - Azure Data Platform End2End
 
 In this workshop you will learn about the main concepts related to advanced analytics and Big Data processing and how Azure Data Services can be used to implement a modern data warehouse architecture. You will learn what Azure services you can leverage to establish a solid data platform to quickly ingest, process and visualise data from a large variety of data sources. The reference architecture you will build as part of this exercise has been proven to give you the flexibility and scalability to grow and handle large volumes of data and keep an optimal level of performance.
 
@@ -13,12 +13,6 @@ In the exercises in this lab you will build data pipelines using data related to
 * Some concepts presented in this course can be quite complex and you may need to seek more information from different sources to compliment your understanding of the Azure services covered.
 
 ![](./Media/ModernDataPlatformReferenceArchitecture.jpg)
-
-### Azure Synapse Analytics
-
-Microsoft recently announced Azure Synapse Analytics as the evolution of Azure SQL Data Warehouse, blending big data, data warehousing, and data integration into a single service for end-to-end analytics at cloud scale. This reference architecture and workshop content will be updated as announced features in the roadmap become publicly available. For more information please visit: https://azure.microsoft.com/en-au/services/synapse-analytics/
-
-![](./Media/AzureSynapse.png)
 
 ## Document Structure
 This document contains detailed step-by-step instructions on how to implement a Modern Data Platform architecture using Azure Data Services. It’s recommended you carefully read the detailed description contained in this document for a successful experience with all Azure services. 
