@@ -886,7 +886,7 @@ In this section you are going to use Power BI to visualize data from Azure Synap
 -------------|
 **Execute these steps inside the ADPDesktop remote desktop connection**|
 
-1.	On ADPDesktop, download the Power BI report from the link https://aka.ms/ADPLab2 and save it in the Desktop.
+1.	On ADPDesktop, download the Power BI report from the link <https://aka.ms/ADPLab2> and save it in the Desktop.
 2.	Open the file ADPLab2.pbit with Power BI Desktop.
 3.	When prompted to enter the value of the **SynapseSQLEndpoint** parameter, type the full server name: **synapsesql-*suffix*.database.windows.net**
 4.	Click **Load**.
