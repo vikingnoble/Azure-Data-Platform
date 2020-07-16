@@ -76,11 +76,11 @@ In this section you are going to install Power BI Desktop and Azure Data Studio 
 4.	Using the browser, download and install the latest version of following software. During the setup, accept all default settings:
     <br>
     <br> **Azure Data Studio (User Installer)**
-    <br>https://docs.microsoft.com/en-us/sql/azure-data-studio/download
+    <br><https://docs.microsoft.com/en-us/sql/azure-data-studio/download>
     <br>![](./Media/Lab1-Image05.png)
     <br>
     <br>**Power BI Desktop (64-bit)**
-    <br>https://aka.ms/pbiSingleInstaller
+    <br><https://aka.ms/pbiSingleInstaller>
     <br>![](./Media/Lab1-Image06.png)
 
 ## Create Azure Synapse Analytics data warehouse objects
