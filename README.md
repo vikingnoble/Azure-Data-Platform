@@ -26,9 +26,9 @@ You will also see the label **IMPORTANT** at the beginning of each lab section. 
 **Execute these steps on your host computer**|
 
 ## Data Source References
-New York City data used in this lab was obtained from the New York City Open Data website: https://opendata.cityofnewyork.us/. The following datasets were used:
-    <br>- NYPD Motor Vehicle Collisions: https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95
-    <br>- TLC Yellow Taxi Trip Data: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+New York City data used in this lab was obtained from the [New York City Open Data website](https://opendata.cityofnewyork.us/). The following datasets were used:
+    <br>- [NYPD Motor Vehicle Collisions](https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95)
+    <br>- [TLC Yellow Taxi Trip Data](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 ## Lab Prerequisites and Deployment
 The following prerequisites must be completed before you start these labs:
@@ -43,9 +43,9 @@ The following prerequisites must be completed before you start these labs:
 
     <br>**IMPORTANT**: When you deploy the lab resources in your own subscription you are responsible for the charges related to the use of the services provisioned. For more information about the list of services and tips on how to save money when executing these labs, please visit the Cost Management section of the [Lab 0: Deploy Azure Data Platform End2End to your subscription](./Deploy/Deploy.md) page.
 
-* Labs 1 to 2 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
+* Labs 1 to 2 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: [link] (https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12)
 
-* Lab 4 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: https://powerbi.microsoft.com/en-us/power-bi-pro/
+* Lab 4 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: [link](https://powerbi.microsoft.com/en-us/power-bi-pro/)
   
 ## Lab Guide
 
