@@ -55,10 +55,6 @@ You will start ingesting relational data about motorvehicle collisions in Manhat
 
 You will then use Databricks and the power of Spark clusters to explore big data files. Then finally, you will use a LogicApp to simulate high-frequency stock purchase transactions as a source of streaming events that you will capture, store and process in real time with Event Hubs, Stream Analytics and Power BI.
 
-By the end of the workshop you will have implemented the lab architecture referenced below:
-
-![](./Media/LabArchitecture.jpg)
-
 ### [Lab 0: Deploy Azure Data Platform End2End to your subscription](./Deploy/Deploy.md)
 
 **IMPORTANT**: You should skip this Lab if you are executing the labs through subscriptions provided by CloudLabs. All Azure services will be deployed as you activate your registration.
