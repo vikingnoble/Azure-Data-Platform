@@ -264,7 +264,7 @@ In this section you will log on to the Power BI portal to create a dashboard to 
 -------------|
 **Execute these steps on your host computer**|
 
-1.	Open a new browser tab and navigate to https://www.powerbi.com
+1.	Open a new browser tab and navigate to <https://www.powerbi.com>
 2.	Enter your credentials to authenticate with the Power BI service.
 
     ![](./Media/Lab4-Image37.png)
