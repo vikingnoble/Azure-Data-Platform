@@ -37,15 +37,15 @@ The following prerequisites must be completed before you start these labs:
 
 * Use either Edge or Chrome when executing the labs. Internet Explorer may have issues when rendering the UI for specific Azure services.
 
-* You must have a Pay-As-You-Go Azure account with administrator- or contributor-level access to your subscription. If you don’t have an account, you can sign up for an account following the instructions here: [link](https://azure.microsoft.com/en-au/pricing/purchase-options/pay-as-you-go/). 
+* You must have a Pay-As-You-Go Azure account with administrator- or contributor-level access to your subscription. If you don’t have an account, you can sign up for an account following the instructions here: <https://azure.microsoft.com/en-au/pricing/purchase-options/pay-as-you-go/>. 
 
     <br>**IMPORTANT**: Azure free subscriptions have quota restrictions that prevent the workshop resources from being deployed successfully. Please use a Pay-As-You-Go subscription instead.
 
     <br>**IMPORTANT**: When you deploy the lab resources in your own subscription you are responsible for the charges related to the use of the services provisioned. For more information about the list of services and tips on how to save money when executing these labs, please visit the Cost Management section of the [Lab 0: Deploy Azure Data Platform End2End to your subscription](./Deploy/Deploy.md) page.
 
-* Labs 1 to 2 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: [link](https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12)
+* Labs 1 to 2 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: <https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12>
 
-* Lab 4 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: [link](https://powerbi.microsoft.com/en-us/power-bi-pro/)
+* Lab 4 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: <https://powerbi.microsoft.com/en-us/power-bi-pro/>
   
 ## Lab Guide
 
