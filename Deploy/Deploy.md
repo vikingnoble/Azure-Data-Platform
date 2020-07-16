@@ -8,9 +8,7 @@ The following Azure services will be deployed in your subscription:
 
 Name                        | Type | Pricing Tier | Pricing Info |
 ----------------------------|------|--------------|--------------|
-adpcosmosdb-*suffix*        | Azure Cosmos DB account | 400 RU/sec | https://azure.microsoft.com/en-us/pricing/details/cosmos-db/
 ADPDatabricks-*suffix*      | Azure Databricks Service | Standard | https://azure.microsoft.com/en-us/pricing/details/databricks/
-ADPComputerVision	        | Cognitive Services | S1 | https://azure.microsoft.com/en-us/pricing/details/cognitive-services/computer-vision/
 SynapseDataFactory-*suffix*	    | Data factory (V2) | Data pipelines | https://azure.microsoft.com/en-us/pricing/details/data-factory/
 ADPEventHubs-*suffix*       | Event Hubs Namespace | Standard | https://azure.microsoft.com/en-us/pricing/details/event-hubs/
 ADPLogicApp	                | Logic app | | https://azure.microsoft.com/en-au/pricing/details/logic-apps/
@@ -115,10 +113,9 @@ The approximate cost to run the resources provisioned for the estimated duration
 Azure Resource | Type | Action |
 ---------------|------|--------|
 SynapseDW      | Azure Azure Synapse Analytics | Pause it after completing Lab 3|
-ADPDatabricks | Databricks Workspace | Stop cluster after completing Lab 4
-adpcosmosdb-*suffix*   | Cosmos DB | Delete ImageMetadata container after completing Lab 4
-ADPDesktop | Virtual Machine | Stop it after completing Lab 4
-ADPLogicApp | Logic App | Disable it after completing Lab 5
-SynapseStreamAnalytics-*suffix* | Stream Analytics job | Pause job after completing Lab 5
+ADPDatabricks | Databricks Workspace | Stop cluster after completing Lab 3
+ADPDesktop | Virtual Machine | Stop it after completing Lab 2
+ADPLogicApp | Logic App | Disable it after completing Lab 4
+SynapseStreamAnalytics-*suffix* | Stream Analytics job | Pause job after completing Lab 4
 
 Some of the services still incur costs even when not running. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
