@@ -62,7 +62,6 @@
         "ADPKeyVaultName": "[concat('ADPKeyVault-',substring(variables('UniqueSuffix'),0,5))]",
 
         "ADPLogicAppName": "ADPLogicApp",
-        "ADPCosmosDBAccountName": "[concat('adpcosmosdb-', substring(variables('UniqueSuffix'),0,5))]",
 		
 		"ADPBastionName": "ADPBastionHost",
 		"ADPBastionPublicIPName": "[concat(variables('ADPBastionName'),'-publicip')]",
@@ -888,39 +887,6 @@
 					"connectionString": "[listkeys(variables('ADPEventHubAuthPolicyID'), '2017-04-01').primaryConnectionString]"
 				}
             }
-        },
-        {
-            "type": "Microsoft.DocumentDB/databaseAccounts",
-            "kind": "GlobalDocumentDB",
-            "name": "[variables('ADPCosmosDBAccountName')]",
-            "apiVersion": "2015-04-08",
-            "location": "[resourceGroup().location]",
-            "tags": {
-                "defaultExperience": "Core (SQL)"
-            },
-            "scale": null,
-            "properties": {
-                "ipRangeFilter": "",
-                "enableAutomaticFailover": false,
-                "enableMultipleWriteLocations": true,
-                "isVirtualNetworkFilterEnabled": false,
-                "virtualNetworkRules": [],
-                "databaseAccountOfferType": "Standard",
-                "consistencyPolicy": {
-                    "defaultConsistencyLevel": "Session",
-                    "maxIntervalInSeconds": 5,
-                    "maxStalenessPrefix": 100
-                },
-                "locations": [
-                    {
-                        "locationName": "[resourceGroup().location]",
-                        "provisioningState": "Succeeded",
-                        "failoverPriority": 0
-                    }
-                ],
-                "capabilities": []
-            },
-            "dependsOn": []
         }
     ]
 }
