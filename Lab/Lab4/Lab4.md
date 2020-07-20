@@ -660,3 +660,6 @@ Execute these steps inside the **ADPDesktop** remote desktop connection|
 8.	Save your work and close Power BI Desktop.
 
     ![](./Media/Lab4-Image70.png)
+    
+    
+### [NEXT Lab 5: Ingest and Analyse real-time data with Event Hubs and Stream Analytics](../Lab5/Lab5.md)
