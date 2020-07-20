@@ -370,3 +370,6 @@ In this section you are going to review the content of the NYCTaxiData-Curated c
 4. Inside each folder you will find the collection of individual Parquet files that make up the NYCTaxiData_Curated Spark table.
 
     ![](./Media/Lab3-Image25.png)
+    
+
+### [NEXT Lab 4: Add AI to your Big Data Pipeline with Cognitive Services](../Lab4/Lab4.md)
