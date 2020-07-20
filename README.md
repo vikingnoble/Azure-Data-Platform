@@ -1,4 +1,4 @@
-# Azure Data Platform End2End (V2)
+# Petronas Data Academy - Azure Data Platform
 
 In this workshop you will learn about the main concepts related to advanced analytics and Big Data processing and how Azure Data Services can be used to implement a modern data warehouse architecture. You will learn what Azure services you can leverage to establish a solid data platform to quickly ingest, process and visualise data from a large variety of data sources. The reference architecture you will build as part of this exercise has been proven to give you the flexibility and scalability to grow and handle large volumes of data and keep an optimal level of performance.
 
@@ -16,7 +16,7 @@ In the exercises in this lab you will build data pipelines using data related to
 
 ### Azure Synapse Analytics
 
-Microsoft recently announced Azure Synapse Analytics as the evolution of Azure SQL Data Warehouse, blending big data, data warehousing, and data integration into a single service for end-to-end analytics at cloud scale. This reference architecture and workshop content will be updated as announced features in the roadmap become publicly available. For more information please visit: https://azure.microsoft.com/en-au/services/synapse-analytics/
+Microsoft recently announced Azure Synapse Analytics as the evolution of Azure SQL Data Warehouse, blending big data, data warehousing, and data integration into a single service for end-to-end analytics at cloud scale. This reference architecture and workshop content will be updated as announced features in the roadmap become publicly available. For more information please visit: <https://azure.microsoft.com/en-au/services/synapse-analytics/>
 
 ![](./Media/AzureSynapse.png)
 
@@ -32,9 +32,9 @@ You will also see the label **IMPORTANT** at the beginning of each lab section. 
 **Execute these steps on your host computer**|
 
 ## Data Source References
-New York City data used in this lab was obtained from the New York City Open Data website: https://opendata.cityofnewyork.us/. The following datasets were used:
-    <br>- NYPD Motor Vehicle Collisions: https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95
-    <br>- TLC Yellow Taxi Trip Data: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+New York City data used in this lab was obtained from the New York City Open Data website: <https://opendata.cityofnewyork.us/>. The following datasets were used:
+    <br>- NYPD Motor Vehicle Collisions: <https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95>
+    <br>- TLC Yellow Taxi Trip Data: <https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page>
 
 ## Lab Prerequisites and Deployment
 The following prerequisites must be completed before you start these labs:
@@ -43,15 +43,15 @@ The following prerequisites must be completed before you start these labs:
 
 * Use either Edge or Chrome when executing the labs. Internet Explorer may have issues when rendering the UI for specific Azure services.
 
-* You must have a Pay-As-You-Go Azure account with administrator- or contributor-level access to your subscription. If you don’t have an account, you can sign up for an account following the instructions here: https://azure.microsoft.com/en-au/pricing/purchase-options/pay-as-you-go/. 
+* You must have a Pay-As-You-Go Azure account with administrator- or contributor-level access to your subscription. If you don’t have an account, you can sign up for an account following the instructions here: <https://azure.microsoft.com/en-au/pricing/purchase-options/pay-as-you-go/>. 
 
     <br>**IMPORTANT**: Azure free subscriptions have quota restrictions that prevent the workshop resources from being deployed successfully. Please use a Pay-As-You-Go subscription instead.
 
     <br>**IMPORTANT**: When you deploy the lab resources in your own subscription you are responsible for the charges related to the use of the services provisioned. For more information about the list of services and tips on how to save money when executing these labs, please visit the Cost Management section of the [Lab 0: Deploy Azure Data Platform End2End to your subscription](./Deploy/Deploy.md) page.
 
-* Labs 1 to 4 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
+* Labs 1 to 4 require you to open a Remote Desktop Connection (RDP) to Azure Virtual Machines. If you are using a Mac, please ensure you have the latest version of the Microsoft Remote Desktop software installed: <https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12>
 
-* Lab 5 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: https://powerbi.microsoft.com/en-us/power-bi-pro/
+* Lab 5 requires you to have a Power BI Pro account. If you don’t have an account you can sign up for a 60-day trial for free here: <https://powerbi.microsoft.com/en-us/power-bi-pro/>
   
 ## Lab Guide
 
@@ -149,53 +149,3 @@ Step     | Description
 ![](./Media/Orange5.png) | Visualize real-time data generated by Stream Analytics with Power BI
 
 ![](./Lab/Lab5/Media/Lab5-Image66.png)
-
-## Workshop Proposed Agenda
-
-### **1-Day Format**
-
-Activity | Duration
--------- | ---------
-Workshop Overview | 15 minutes
-Modern Data Platform Concepts: Part I | 15 minutes
-**Modern Data Warehousing** |
-Lab 1: Load Data into Azure Synapse Analytics using Azure Data Factory Pipelines    | 45 minutes
-Modern Data Platform Concepts: Part II | 15 minutes
-Lab 2: Transform Big Data using Azure Data Factory Mapping Data Flows    | 60 minutes
-**Advanced Analytics** |
-Modern Data Platform Concepts: Part III | 15 minutes
-Lab 3: Explore Big Data using Azure Databricks    | 45 minutes
-Modern Data Platform Concepts: Part IV | 15 minutes
-Lab 4: Add AI to your Big Data Pipeline with Cognitive Services    | 75 minutes
-**Real-time Analytics** |
-Modern Data Platform Concepts: Part V | 15 minutes
-Lab 5: Ingest and Analyse real-time data with Event Hubs and Stream Analytics   | 45 minutes
-
-### **2-Day Format**
-
-The workshop content will be delivered over the course of two days with the following agenda:
-
-### **Day 1**
-
-Activity | Duration
--------- | ---------
-Workshop Overview | 45 minutes
-Lab 0: Deploy Azure Data Platform End2End to your subscription | 30 minutes
-Modern Data Platform Concepts: Part I | 90 minutes
-**Modern Data Warehousing** |
-Lab 1: Load Data into Azure Synapse Analytics using Azure Data Factory Pipelines    | 45 minutes
-Modern Data Platform Concepts: Part II | 90 minutes
-Lab 2: Transform Big Data using Azure Data Factory and Azure Synapse Analytics    | 60 minutes
-
-### **Day 2**
-
-Activity | Duration
--------- | ---------
-**Advanced Analytics** |
-Modern Data Platform Concepts: Part III | 60 minutes
-Lab 3: Explore Big Data using Azure Databricks    | 45 minutes
-Modern Data Platform Concepts: Part IV | 60 minutes
-Lab 4: Add AI to your Big Data Pipeline with Cognitive Services    | 75 minutes
-**Real-time Analytics** |
-Modern Data Platform Concepts: Part V | 60 minutes
-Lab 5: Ingest and Analyse real-time data with Event Hubs and Stream Analytics   | 45 minutes
