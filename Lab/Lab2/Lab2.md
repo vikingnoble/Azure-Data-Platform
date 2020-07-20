@@ -905,3 +905,6 @@ In this section you are going to use Power BI to visualize data from Azure Synap
 9.	Save your work and close Power BI Desktop.
 
     ![](./Media/Lab2-Image40.png)
+    
+
+### [NEXT Lab 3: Explore Big Data using Azure Databricks](../Lab3/Lab3.md)
