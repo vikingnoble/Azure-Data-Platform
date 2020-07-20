@@ -123,5 +123,8 @@ SynapseStreamAnalytics-*suffix* | Stream Analytics job | Pause job after complet
 
 Some of the services still incur costs even when not running. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
 
+<br>Please contact the following people for any issues or query:
+    <br> **King Noble** ([king.noble@avanade.com](mailto:king.noble@avanade.com))
+    <br> **Ashley KB Ow** ([ashley.kb.ow@avanade.com](mailto:ashley.kb.ow@avanade.com))
 
 ### [Back to Main](../README.md)
