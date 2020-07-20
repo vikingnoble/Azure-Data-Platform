@@ -238,7 +238,7 @@ Dataset |Role           |Linked Service| Description|
 
 11.	Repeat the process to create a new Azure Storage CSV dataset referencing the NYCTaxiData container in your SynapseDataLake storage account. This dataset acts as the data source of NYC taxi records (CSV) you will copy to your Azure Synapse Analytics.
 
-    **IMPORTANT**: You will need to download the sample file from https://aka.ms/TaxiDataSampleFile to your Desktop. This file will be used to derive the schema for the dataset. 
+    **IMPORTANT**: You will need to download the sample file from <https://aka.ms/TaxiDataSampleFile> to your Desktop. This file will be used to derive the schema for the dataset. 
     
     The reason you need this step is because you will need to work with column names in the mapping data flow, but at design time you don't have the data files in your data lake yet.
 
@@ -886,7 +886,7 @@ In this section you are going to use Power BI to visualize data from Azure Synap
 -------------|
 **Execute these steps inside the ADPDesktop remote desktop connection**|
 
-1.	On ADPDesktop, download the Power BI report from the link https://aka.ms/ADPLab2 and save it in the Desktop.
+1.	On ADPDesktop, download the Power BI report from the link <https://aka.ms/ADPLab2> and save it in the Desktop.
 2.	Open the file ADPLab2.pbit with Power BI Desktop.
 3.	When prompted to enter the value of the **SynapseSQLEndpoint** parameter, type the full server name: **synapsesql-*suffix*.database.windows.net**
 4.	Click **Load**.
