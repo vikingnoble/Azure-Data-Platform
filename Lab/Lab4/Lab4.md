@@ -118,10 +118,10 @@ https://github.com/fabragaMS/ADPE2E/raw/master/Lab/Lab4/NYCImageMetadata-Lab.dbc
 
 Test Image|Test Image URL|
 ----------|--------------|
-![](https://petlifetoday.com/wp-content/uploads/2018/06/wireless-dog-fence.jpg)|https://petlifetoday.com/wp-content/uploads/2018/06/wireless-dog-fence.jpg|
-![](https://static.pexels.com/photos/4204/nature-lawn-blur-flower.jpg)|https://static.pexels.com/photos/4204/nature-lawn-blur-flower.jpg|
-![](https://image.redbull.com/rbcom/052/2017-05-22/89eef344-d24f-4520-8680-8b8f7508b264/0012/0/0/0/2428/3642/800/1/best-beginner-motocross-bikes-ktm-250-sx-f.jpg)|https://image.redbull.com/rbcom/052/2017-05-22/89eef344-d24f-4520-8680-8b8f7508b264/0012/0/0/0/2428/3642/800/1/best-beginner-motocross-bikes-ktm-250-sx-f.jpg|
-![](https://www.zastavki.com/pictures/originals/2014/World___Panama_City_landscape_in_panama_079246_.jpg)|https://www.zastavki.com/pictures/originals/2014/World___Panama_City_landscape_in_panama_079246_.jpg|
+![](https://petlifetoday.com/wp-content/uploads/2018/06/wireless-dog-fence.jpg)|<https://petlifetoday.com/wp-content/uploads/2018/06/wireless-dog-fence.jpg>|
+![](https://static.pexels.com/photos/4204/nature-lawn-blur-flower.jpg)|<https://static.pexels.com/photos/4204/nature-lawn-blur-flower.jpg>|
+![](https://image.redbull.com/rbcom/052/2017-05-22/89eef344-d24f-4520-8680-8b8f7508b264/0012/0/0/0/2428/3642/800/1/best-beginner-motocross-bikes-ktm-250-sx-f.jpg)|<https://image.redbull.com/rbcom/052/2017-05-22/89eef344-d24f-4520-8680-8b8f7508b264/0012/0/0/0/2428/3642/800/1/best-beginner-motocross-bikes-ktm-250-sx-f.jpg>|
+![](https://www.zastavki.com/pictures/originals/2014/World___Panama_City_landscape_in_panama_079246_.jpg)|<https://www.zastavki.com/pictures/originals/2014/World___Panama_City_landscape_in_panama_079246_.jpg>|
 
 16.	Click Run All to execute the notebook.
 
@@ -639,7 +639,7 @@ In this section you are going to use Power BI to visualize data from Cosmos DB. 
 -------------|
 Execute these steps inside the **ADPDesktop** remote desktop connection|
 
-1.	On ADPDesktop, download the Power BI report from the link https://aka.ms/ADPLab4 and save it in the Desktop.
+1.	On ADPDesktop, download the Power BI report from the link <https://aka.ms/ADPLab4> and save it in the Desktop.
 
 2.	Open the file **ADPLab4.pbit** with Power BI Desktop.
 
