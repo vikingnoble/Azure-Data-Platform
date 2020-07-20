@@ -27,7 +27,7 @@ You will also see the label **IMPORTANT** at the beginning of each lab section. 
 
 ## Data Source References
 New York City data used in this lab was obtained from the New York City Open Data website: <https://opendata.cityofnewyork.us/>. 
-The following datasets were used:
+<br>The following datasets were used:
     <br>- NYPD Motor Vehicle Collisions: <https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95>
     <br>- TLC Yellow Taxi Trip Data: <https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page>
 
