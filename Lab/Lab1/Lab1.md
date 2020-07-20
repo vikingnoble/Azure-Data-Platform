@@ -76,11 +76,11 @@ In this section you are going to install Power BI Desktop and Azure Data Studio 
 4.	Using the browser, download and install the latest version of following software. During the setup, accept all default settings:
     <br>
     <br> **Azure Data Studio (User Installer)**
-    <br>https://docs.microsoft.com/en-us/sql/azure-data-studio/download
+    <br><https://docs.microsoft.com/en-us/sql/azure-data-studio/download>
     <br>![](./Media/Lab1-Image05.png)
     <br>
     <br>**Power BI Desktop (64-bit)**
-    <br>https://aka.ms/pbiSingleInstaller
+    <br><https://aka.ms/pbiSingleInstaller>
     <br>![](./Media/Lab1-Image06.png)
 
 ## Create Azure Synapse Analytics data warehouse objects
@@ -380,7 +380,7 @@ In this section you are going to use Power BI to visualize data from Azure Synap
 -------------|
 **Execute these steps inside the ADPDesktop remote desktop connection**|
 
-1.	On ADPDesktop, download the Power BI report from the link https://aka.ms/ADPLab1 and save it on the Desktop.
+1.	On ADPDesktop, download the Power BI report from the link <https://aka.ms/ADPLab1> and save it on the Desktop.
 2.	Open the file ADPLab1.pbit with Power BI Desktop. Optionally sign up for the Power BI tips and tricks email, or to dismiss this, click to sign in with an existing account, and then hit the escape key.
 3.	When prompted to enter the value of the **SynapseSQLEnpoint** parameter, type the full server name: synapsesql-*suffix*.database.windows.net
 
