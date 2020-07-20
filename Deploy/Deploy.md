@@ -122,3 +122,6 @@ ADPLogicApp | Logic App | Disable it after completing Lab 5
 SynapseStreamAnalytics-*suffix* | Stream Analytics job | Pause job after completing Lab 5
 
 Some of the services still incur costs even when not running. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
+
+
+### [Back to Main](../../README.md)
