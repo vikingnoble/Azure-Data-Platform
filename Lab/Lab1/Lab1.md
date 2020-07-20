@@ -399,4 +399,4 @@ In this section you are going to use Power BI to visualize data from Azure Synap
     ![](./Media/Lab1-Image51.png)
     
 
-## [NEXT Lab 2: Transform Big Data using Azure Data Factory Mapping Data Flows](../Lab2/Lab2.md)
+### [NEXT Lab 2: Transform Big Data using Azure Data Factory Mapping Data Flows](../Lab2/Lab2.md)
