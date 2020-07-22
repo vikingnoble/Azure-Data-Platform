@@ -30,7 +30,7 @@
         "DesktopVMSize":"Standard_A4_v2",
         "SynapseSQLDWSize":"DW200c",
 
-        "UniqueSuffix":[parameters('UserLastName')],
+        "UniqueSuffix":"[parameters('UserLastName')]",
 
         "ADPVirtualNetworkName": "[concat('ADPVirtualNetwork-', variables('UniqueSuffix'))]",
         "ADPVirtualNetworkIPAddressPrefix": "10.10.0.0/16",
