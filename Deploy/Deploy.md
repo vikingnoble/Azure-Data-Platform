@@ -88,7 +88,7 @@ In this section you will use automated deployment and ARM templates to automate 
     <br>- **Subscription**: [your Azure subscription]
     <br>- **Resource group**: [select the resource group you created in the previous section]
     <br>- **User Last Name**: [Type in the first 3 characters of the last name of the participant without any spaces]
-    Please review the Terms and Conditions and check the box to indicate that you agree with them.
+    <br>Please review the Terms and Conditions and check the box to indicate that you agree with them.
 
 3. Click **Purchase**
 
