@@ -13,15 +13,15 @@ ADPDatabricks-*suffix*      | Azure Databricks Service | Standard | <https://azu
 ADPComputerVision	        | Cognitive Services | S1 | <https://azure.microsoft.com/en-us/pricing/details/cognitive-services/computer-vision/>
 SynapseDataFactory-*suffix*	    | Data factory (V2) | Data pipelines | <https://azure.microsoft.com/en-us/pricing/details/data-factory/>
 ADPEventHubs-*suffix*       | Event Hubs Namespace | Standard | <https://azure.microsoft.com/en-us/pricing/details/event-hubs/>
-ADPLogicApp	                | Logic app | | <https://azure.microsoft.com/en-au/pricing/details/logic-apps/>
+ADPLogicApp-*suffix*	                | Logic app | | <https://azure.microsoft.com/en-au/pricing/details/logic-apps/>
 SynapseDW                   | Azure Synapse Analytics | DW200c | <https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/gen2/>
 NYCDataSets                   | SQL database | Standard S1 | <https://azure.microsoft.com/en-au/pricing/details/sql-database/single/>
 synapsesql-*suffix*| SQL server || 
 operationalsql-*suffix*| SQL server || 
 synapsedatalake*suffix*	        | Azure Data Lake Storage Gen2 || <https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/>
 SynapseStreamAnalytics-*suffix*	| Stream Analytics job | 3 SU | <https://azure.microsoft.com/en-us/pricing/details/stream-analytics/>
-ADPDesktop	                | Virtual machine | A4 v2 | <https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/>
-ADPDesktop_OsDisk	        | Disk | E10 | <https://azure.microsoft.com/en-us/pricing/details/managed-disks/>
+ADPDesktop-*suffix*	                | Virtual machine | A4 v2 | <https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/>
+ADPDesktop-*suffix*_OsDisk	        | Disk | E10 | <https://azure.microsoft.com/en-us/pricing/details/managed-disks/>
 ADPDesktop-nic	            | Network interface ||
 ADPDesktop-publicip	        | Public IP address || <https://azure.microsoft.com/en-us/pricing/details/ip-addresses/>
 ADPVirtualNetwork	        | Virtual network || <https://azure.microsoft.com/en-us/pricing/details/virtual-network/>
@@ -86,7 +86,7 @@ In this section you will use automated deployment and ARM templates to automate 
 
 1. You can deploy all Azure services required in each lab by clicking the **Deploy to Azure** button below. 
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FfabragaMS%2FADPE2E%2Fmaster%2FDeploy%2Fazuredeploy.json" target="_blank">
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fvikingnoble%2FAzure-Data-Platform-Petronas%2Fmaster%2FDeploy%2Fazuredeploy.json" target="_blank">
     <img src="https://github.com/fabragaMS/ADPE2E/raw/master/Deploy/Media/deploytoazure.png"/>    
 </a>
 
