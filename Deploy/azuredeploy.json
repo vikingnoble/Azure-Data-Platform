@@ -19,7 +19,7 @@
 		"UserLastName": {
             "type": "string",
             "metadata": {
-                "description": "Type in the last name of the participant without any spaces"
+                "description": "Type in the first 3 characters of the last name of the participant without any spaces"
             }   
         }	
     },
