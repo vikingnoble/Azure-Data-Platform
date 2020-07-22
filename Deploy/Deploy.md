@@ -20,7 +20,7 @@ synapsesql-*suffix*| SQL server ||
 operationalsql-*suffix*| SQL server || 
 synapsedatalake*suffix*	        | Azure Data Lake Storage Gen2 || <https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/>
 SynapseStreamAnalytics-*suffix*	| Stream Analytics job | 3 SU | <https://azure.microsoft.com/en-us/pricing/details/stream-analytics/>
-ADPDesktop-*suffix*	                | Virtual machine | A4 v2 | <https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/>
+ADPDesktop*suffix*	                | Virtual machine | A4 v2 | <https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/>
 ADPDesktop-*suffix*_OsDisk	        | Disk | E10 | <https://azure.microsoft.com/en-us/pricing/details/managed-disks/>
 ADPDesktop-*suffix*-nic	            | Network interface ||
 ADPDesktop-*suffix*-publicip	        | Public IP address || <https://azure.microsoft.com/en-us/pricing/details/ip-addresses/>
@@ -109,10 +109,10 @@ The approximate cost to run the resources provisioned for the estimated duration
 Azure Resource | Type | Action |
 ---------------|------|--------|
 SynapseDW      | Azure Azure Synapse Analytics | Pause it after completing Lab 3|
-ADPDatabricks | Databricks Workspace | Stop cluster after completing Lab 4
+ADPDatabricks-*suffix* | Databricks Workspace | Stop cluster after completing Lab 4
 adpcosmosdb-*suffix*   | Cosmos DB | Delete ImageMetadata container after completing Lab 4
-ADPDesktop | Virtual Machine | Stop it after completing Lab 4
-ADPLogicApp | Logic App | Disable it after completing Lab 5
+ADPDesktop*suffix* | Virtual Machine | Stop it after completing Lab 4
+ADPLogicApp-*suffix* | Logic App | Disable it after completing Lab 5
 SynapseStreamAnalytics-*suffix* | Stream Analytics job | Pause job after completing Lab 5
 
 Some of the services still incur costs even when not running. If you don't want any extra charges associated with the lab resources you should delete the lab resource group and all resources in it.
