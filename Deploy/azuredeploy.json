@@ -15,7 +15,13 @@
             "metadata": {
                 "description": "Admin password used to connect to all services during the workshop."
             }   
-        }
+        },
+		"UserLastName": {
+            "type": "string",
+            "metadata": {
+                "description": "Type in the last name of the participant without any spaces"
+            }   
+        }	
     },
     "variables": {
         "ADPAdminUserName":"adpadmin",
@@ -24,55 +30,55 @@
         "DesktopVMSize":"Standard_A4_v2",
         "SynapseSQLDWSize":"DW200c",
 
-        "UniqueSuffix":"[uniqueString(resourceGroup().id)]",
+        "UniqueSuffix":[parameters('UserLastName')],
 
-        "ADPVirtualNetworkName": "ADPVirtualNetwork",
+        "ADPVirtualNetworkName": "[concat('ADPVirtualNetwork-', variables('UniqueSuffix'))]",
         "ADPVirtualNetworkIPAddressPrefix": "10.10.0.0/16",
         "ADPVirtualSubnetName": "default",
         "ADPVirtualSubnetIPAddressPrefix": "10.10.0.0/24",
         
-        "ADPDesktopName":"ADPDesktop",
+        "ADPDesktopName":"[concat('ADPDesktop-', variables('UniqueSuffix'))]",
         "ADPDesktopNICName":"[concat(variables('ADPDesktopName'),'-nic')]",
         "ADPDesktopOSDiskName":"[concat(variables('ADPDesktopName'),'_OsDisk')]",
         "ADPDesktopPublicIPName":"[concat(variables('ADPDesktopName'),'-publicip')]",
         
-        "ADPDataLakeStorageName":"[concat('synapsedatalake', substring(variables('UniqueSuffix'),0,5))]",
+        "ADPDataLakeStorageName":"[concat('synapsedatalake', variables('UniqueSuffix'))]",
 
-		"ADPOperationalSQLEndpoint": "[concat('operationalsql-', substring(variables('UniqueSuffix'),0,5))]",
+		"ADPOperationalSQLEndpoint": "[concat('operationalsql-', variables('UniqueSuffix')]",
 
-        "ADPSynapseSQLEndpoint": "[concat('synapsesql-', substring(variables('UniqueSuffix'),0,5))]",
+        "ADPSynapseSQLEndpoint": "[concat('synapsesql-', variables('UniqueSuffix'))]",
         "ADPSynapseDWName":"SynapseDW",
         "ADPSynapseDWCollation": "SQL_Latin1_General_CP1_CI_AS",
 
-        "ADPDataFactoryName": "[concat('SynapseDataFactory-',substring(variables('UniqueSuffix'),0,5))]",
+        "ADPDataFactoryName": "[concat('SynapseDataFactory-',variables('UniqueSuffix'))]",
         "ADPDataFactoryLocation": "[resourceGroup().location]",
 
-        "ADPDatabricksWorkspaceName":"[concat('ADPDatabricks-',substring(variables('UniqueSuffix'),0,5))]",
+        "ADPDatabricksWorkspaceName":"[concat('ADPDatabricks-',variables('UniqueSuffix'))]",
         "ADPDatabricksResourceGroupName": "[concat('Databricks-', resourceGroup().name)]", 
         "ADPDatabricksResourceGroupID": "[concat(subscription().id, '/resourceGroups/', variables('ADPDatabricksResourceGroupName'))]",
         "ADPDatabricksTier":"standard",
 
-        "ADPComputerVisionName":"ADPComputerVision",
+        "ADPComputerVisionName":"[concat('ADPComputerVision-', variables('UniqueSuffix'))]",
         "ADPComputerVisionSKU": "S1",
 
-        "ADPEventHubsName": "[concat('ADPEventHubs-', substring(variables('UniqueSuffix'),0,5))]",
+        "ADPEventHubsName": "[concat('ADPEventHubs-', variables('UniqueSuffix'))]",
         "ADPEventHubsSKU": "Standard",
         "ADPEventHubsThroughputUnits": 1,
 
-        "ADPStreamAnalyticsName": "[concat('SynapseStreamAnalytics-',substring(variables('UniqueSuffix'),0,5))]",
+        "ADPStreamAnalyticsName": "[concat('SynapseStreamAnalytics-',variables('UniqueSuffix'))]",
         "ADPStreamAnalyticsSKU": "Standard",
 
-        "ADPKeyVaultName": "[concat('ADPKeyVault-',substring(variables('UniqueSuffix'),0,5))]",
+        "ADPKeyVaultName": "[concat('ADPKeyVault-',variables('UniqueSuffix'))]",
 
-        "ADPLogicAppName": "ADPLogicApp",
-        "ADPCosmosDBAccountName": "[concat('adpcosmosdb-', substring(variables('UniqueSuffix'),0,5))]",
+        "ADPLogicAppName": "[concat('ADPLogicApp-',variables('UniqueSuffix'))]",
+        "ADPCosmosDBAccountName": "[concat('adpcosmosdb-', variables('UniqueSuffix'))]",
 		
-		"ADPBastionName": "ADPBastionHost",
+		"ADPBastionName": "[concat('ADPBastionHost-',variables('UniqueSuffix'))]",
 		"ADPBastionPublicIPName": "[concat(variables('ADPBastionName'),'-publicip')]",
 		
-		"ADPIntegrationAccountName": "ADPIntegrationAccount",
+		"ADPIntegrationAccountName": "[concat('ADPIntegrationAccount-',variables('UniqueSuffix'))]",
 		
-		"ADPEventHubConnectionName": "EventHubAPIConnection",
+		"ADPEventHubConnectionName": "[concat('EventHubAPIConnection-',variables('UniqueSuffix'))]",
 		"ADPEventHubAuthPolicyID": "[resourceId('Microsoft.Eventhub/namespaces/authorizationRules', variables('ADPEventHubsName'), 'RootManageSharedAccessKey')]",
 		"ADPEventHubsAPIVersion": "[providers('Microsoft.Eventhub','namespaces').apiVersions[0]]"
     },
