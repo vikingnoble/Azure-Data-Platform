@@ -44,7 +44,7 @@
         
         "ADPDataLakeStorageName":"[concat('synapsedatalake', variables('UniqueSuffix'))]",
 
-		"ADPOperationalSQLEndpoint": "[concat('operationalsql-', variables('UniqueSuffix')]",
+		"ADPOperationalSQLEndpoint": "[concat('operationalsql-', variables('UniqueSuffix'))]",
 
         "ADPSynapseSQLEndpoint": "[concat('synapsesql-', variables('UniqueSuffix'))]",
         "ADPSynapseDWName":"SynapseDW",
