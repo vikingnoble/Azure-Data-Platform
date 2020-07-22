@@ -37,7 +37,7 @@
         "ADPVirtualSubnetName": "default",
         "ADPVirtualSubnetIPAddressPrefix": "10.10.0.0/24",
         
-        "ADPDesktopName":"[concat('ADPDesktop-', variables('UniqueSuffix'))]",
+        "ADPDesktopName":"[concat('ADPDesktop', variables('UniqueSuffix'))]",
         "ADPDesktopNICName":"[concat(variables('ADPDesktopName'),'-nic')]",
         "ADPDesktopOSDiskName":"[concat(variables('ADPDesktopName'),'_OsDisk')]",
         "ADPDesktopPublicIPName":"[concat(variables('ADPDesktopName'),'-publicip')]",
