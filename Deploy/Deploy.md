@@ -87,8 +87,8 @@ In this section you will use automated deployment and ARM templates to automate 
 2. You will be directed to the Azure portal to deploy the ADPE2E ARM template from this repository. On the **Custom deployment** blade, enter the following details:
     <br>- **Subscription**: [your Azure subscription]
     <br>- **Resource group**: [select the resource group you created in the previous section]
-
-    Please review the Terms and Conditions and check the box to indicate that you agree with them.
+    <br>- **User Last Name**: [Type in the first 3 characters of the last name of the participant without any spaces]
+    <br>Please review the Terms and Conditions and check the box to indicate that you agree with them.
 
 3. Click **Purchase**
 
