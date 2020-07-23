@@ -16,12 +16,18 @@
                 "description": "Admin password used to connect to all services during the workshop."
             }   
         },
+		"resourceTags": {
+			"type": "object",
+			"defaultValue": {
+            "Project": "Leadership Xchange"
+			}
+		},
 		"UserLastName": {
             "type": "string",
             "metadata": {
                 "description": "Type in the first 3 characters of the last name of the participant without any spaces"
             }   
-        }	
+        }
     },
     "variables": {
         "ADPAdminUserName":"adpadmin",
@@ -89,6 +95,7 @@
             "apiVersion": "2018-12-01",
             "location": "[resourceGroup().location]",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "provisioningState": "Succeeded",
                 "addressSpace": {
@@ -127,6 +134,7 @@
             "name": "[concat(variables('ADPVirtualNetworkName'), '/', variables('ADPVirtualSubnetName'))]",
             "apiVersion": "2019-09-01",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "provisioningState": "Succeeded",
                 "addressPrefix": "[variables('ADPVirtualSubnetIPAddressPrefix')]",
@@ -140,6 +148,7 @@
             "type": "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2019-09-01",
             "name": "[concat(variables('ADPVirtualNetworkName'), '/', '/AzureBastionSubnet')]",
+			"tags": "[parameters('resourceTags')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', variables('ADPVirtualNetworkName'))]"
             ],
@@ -160,7 +169,7 @@
             "name": "[variables('ADPDesktopPublicIPName')]",
             "apiVersion": "2018-12-01",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "provisioningState": "Succeeded",
@@ -179,6 +188,7 @@
             "sku": {
                 "name": "Standard"
             },
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "ipAddress": "20.188.223.148",
                 "publicIPAddressVersion": "IPv4",
@@ -192,6 +202,7 @@
             "apiVersion": "2019-09-01",
             "name": "[variables('ADPBastionName')]",
             "location": "[resourceGroup().location]",
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "dnsName": "[concat('bst-',guid(subscription().subscriptionId),'.bastion.azure.com')]",
                 "ipConfigurations": [
@@ -218,7 +229,7 @@
             "name": "[variables('ADPDesktopName')]",
             "apiVersion": "2018-10-01",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "hardwareProfile": {
@@ -272,7 +283,7 @@
             "name": "[variables('ADPDesktopNICName')]",
             "apiVersion": "2018-12-01",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "provisioningState": "Succeeded",
@@ -317,7 +328,7 @@
             "name": "[variables('ADPDataLakeStorageName')]",
             "apiVersion": "2019-06-01",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "isHnsEnabled": true,
@@ -354,6 +365,7 @@
                 "name": "Standard_RAGRS",
                 "tier": "Standard"
             },
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "cors": {
                     "corsRules": []
@@ -374,6 +386,7 @@
                 "name": "Standard_RAGRS",
                 "tier": "Standard"
             },
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "cors": {
                     "corsRules": []
@@ -388,6 +401,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "None"
             }
@@ -400,6 +414,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "Blob"
             }
@@ -412,6 +427,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "None"
             }
@@ -424,6 +440,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "None"
             }
@@ -436,6 +453,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "None"
             }
@@ -448,6 +466,7 @@
                 "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('ADPDataLakeStorageName'), 'default')]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('ADPDataLakeStorageName'))]"
             ],
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "publicAccess": "None"
             }
@@ -465,6 +484,7 @@
                 "version": "12.0"
             },
             "dependsOn": [],
+			"tags": "[parameters('resourceTags')]",
 			"resources":[
 				{
 					"type": "firewallrules",
@@ -494,6 +514,7 @@
                 "version": "12.0"
             },
             "dependsOn": [],
+			"tags": "[parameters('resourceTags')]",
 			"resources":[
 				{
 					"type": "firewallrules",
@@ -521,6 +542,7 @@
             "apiVersion": "2017-03-01-preview",
             "location": "[resourceGroup().location]",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "collation": "[variables('ADPSynapseDWCollation')]",
                 "maxSizeBytes": 263882790666240,
@@ -535,6 +557,7 @@
             "name": "[concat(variables('ADPSynapseSQLEndpoint'), '/AllowAllWindowsAzureIps')]",
             "apiVersion": "2015-05-01-preview",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "startIpAddress": "0.0.0.0",
                 "endIpAddress": "0.0.0.0"
@@ -547,7 +570,7 @@
             "type": "Microsoft.Sql/servers/databases",
             "apiVersion": "2017-10-01-preview",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "name": "[concat(variables('ADPOperationalSQLEndpoint'), '/NYCDataSets')]",
 			"kind": "v12.0,user",
             "properties": {
@@ -590,6 +613,7 @@
             "name": "[variables('ADPDataFactoryName')]",
             "location": "[variables('ADPDataFactoryLocation')]",
             "type": "Microsoft.DataFactory/factories",
+			"tags": "[parameters('resourceTags')]",
             "identity": {
                 "type": "SystemAssigned"
             },
@@ -603,6 +627,7 @@
                 "name": "[variables('ADPDatabricksTier')]"
             },
             "comments": "Please do not use an existing resource group for ManagedResourceGroupId.",
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "ManagedResourceGroupId": "[variables('ADPDatabricksResourceGroupID')]"
             },
@@ -618,6 +643,7 @@
             "apiVersion": "2016-02-01-preview",
             "location": "[resourceGroup().location]",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {},
             "dependsOn": []
         },
@@ -631,7 +657,7 @@
             "name": "[variables('ADPEventHubsName')]",
             "apiVersion": "2017-04-01",
             "location": "[resourceGroup().location]",
-            "tags": {},
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "isAutoInflateEnabled": false,
@@ -677,6 +703,7 @@
             "apiVersion": "2017-04-01-preview",
             "location": "[resourceGroup().location]",
             "scale": null,
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "sku": {
                     "name": "[variables('ADPStreamAnalyticsSKU')]"
@@ -704,6 +731,7 @@
             "apiVersion": "2016-06-01",
             "name": "[variables('ADPIntegrationAccountName')]",
             "location": "[resourceGroup().location]",
+			"tags": "[parameters('resourceTags')]",
             "sku": {
                 "name": "Basic"
             },
@@ -716,6 +744,7 @@
 			"apiVersion": "2017-07-01",
 			"name": "[variables('ADPLogicAppName')]",
 			"location": "[resourceGroup().location]",
+			"tags": "[parameters('resourceTags')]",
 			"properties": {
 				"state": "Disabled",
 				"integrationAccount": {
@@ -900,6 +929,7 @@
             "apiVersion": "2016-06-01",
             "name": "[variables('ADPEventHubConnectionName')]",
             "location": "[resourceGroup().location]",
+			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "displayName": "[variables('ADPEventHubConnectionName')]",
                 "customParameterValues": {},
@@ -917,9 +947,7 @@
             "name": "[variables('ADPCosmosDBAccountName')]",
             "apiVersion": "2015-04-08",
             "location": "[resourceGroup().location]",
-            "tags": {
-                "defaultExperience": "Core (SQL)"
-            },
+            "tags": "[parameters('resourceTags')]",
             "scale": null,
             "properties": {
                 "ipRangeFilter": "",
