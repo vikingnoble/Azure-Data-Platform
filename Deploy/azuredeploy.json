@@ -134,7 +134,6 @@
             "name": "[concat(variables('ADPVirtualNetworkName'), '/', variables('ADPVirtualSubnetName'))]",
             "apiVersion": "2019-09-01",
             "scale": null,
-			"tags": "[parameters('resourceTags')]",
             "properties": {
                 "provisioningState": "Succeeded",
                 "addressPrefix": "[variables('ADPVirtualSubnetIPAddressPrefix')]",
@@ -148,7 +147,6 @@
             "type": "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2019-09-01",
             "name": "[concat(variables('ADPVirtualNetworkName'), '/', '/AzureBastionSubnet')]",
-			"tags": "[parameters('resourceTags')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', variables('ADPVirtualNetworkName'))]"
             ],
