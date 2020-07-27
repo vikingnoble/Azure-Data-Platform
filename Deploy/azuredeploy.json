@@ -205,7 +205,7 @@
                 "dnsName": "[concat('bst-',guid(subscription().subscriptionId),'.bastion.azure.com')]",
                 "ipConfigurations": [
                     {
-                        "name": "[concat('IpConf-', variables('UniqueSuffix'))]",
+                        "name": "IpConf",
                         "properties": {
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
