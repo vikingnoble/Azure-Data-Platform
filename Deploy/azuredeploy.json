@@ -60,7 +60,7 @@
         "ADPDataFactoryLocation": "[resourceGroup().location]",
 
         "ADPDatabricksWorkspaceName":"[concat('ADPDatabricks-',variables('UniqueSuffix'))]",
-        "ADPDatabricksResourceGroupName": "[concat('Databricks-', resourceGroup().name)]", 
+        "ADPDatabricksResourceGroupName": "[concat('Databricks-',variables('UniqueSuffix'),'-', resourceGroup().name)]", 
         "ADPDatabricksResourceGroupID": "[concat(subscription().id, '/resourceGroups/', variables('ADPDatabricksResourceGroupName'))]",
         "ADPDatabricksTier":"standard",
 
