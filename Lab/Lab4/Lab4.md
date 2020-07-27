@@ -80,7 +80,7 @@ In this section you will import a Databricks notebook to your workspace and fill
 4.	On the **Import Notebooks** pop up window, select **Import from: URL**. Copy and paste the URL below in the box:
 
 ```url
-https://github.com/fabragaMS/ADPE2E/raw/master/Lab/Lab4/NYCImageMetadata-Lab.dbc
+https://github.com/vikingnoble/Azure-Data-Platform-Petronas/blob/master/Lab/Lab4/NYCImageMetadata-Lab.dbc
 ```
 
 5.	Click **Import**.
