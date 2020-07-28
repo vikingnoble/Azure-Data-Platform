@@ -195,6 +195,32 @@
                 "ipTags": []
             }
         },
+		{
+            "type": "Microsoft.Network/bastionHosts",
+            "apiVersion": "2019-09-01",
+            "name": "[variables('ADPBastionName')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "dnsName": "[concat('bst-',guid(subscription().subscriptionId),'.bastion.azure.com')]",
+                "ipConfigurations": [
+                    {
+                        "name": "IpConf",
+                        "properties": {
+                            "privateIPAllocationMethod": "Dynamic",
+                            "publicIPAddress": {
+                                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('ADPBastionPublicIPName'))]"
+                            },
+                            "subnet": {
+                                "id": "[concat(resourceId('Microsoft.Network/virtualNetworks', variables('ADPVirtualNetworkName')), '/subnets/AzureBastionSubnet')]"
+                            }
+                        }
+                    }
+                ]
+            },
+			"dependsOn": [
+				"[resourceId('Microsoft.Network/virtualNetworks', variables('ADPVirtualNetworkName'))]"
+			]
+        },
         {
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[variables('ADPDesktopName')]",
