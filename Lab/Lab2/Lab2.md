@@ -626,7 +626,7 @@ In this section you are going to create an integration runtime for Mapping Data 
 5. Click **Create** to create the integration runtime.
 
 ## Create a Mapping Data Flow
-In this section you are going to create a Mapping Data Flow that will transform the Taxi detailed records into an aggreated daily summary. The Mapping Data Flow will read all records from the files stored in your SynapseDataLake account and apply a sequence of transformations before the aggregated summary can be saved into the NYC.TaxiDataSummary table in your Azure Synapse Analytics.
+In this section you are going to create a Mapping Data Flow that will transform the Taxi detailed records into an aggregated daily summary. The Mapping Data Flow will read all records from the files stored in your SynapseDataLake account and apply a sequence of transformations before the aggregated summary can be saved into the NYC.TaxiDataSummary table in your Azure Synapse Analytics.
 
 **IMPORTANT**|
 -------------|
