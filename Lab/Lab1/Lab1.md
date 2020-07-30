@@ -26,6 +26,40 @@ Step     | Description
 
 **IMPORTANT**: Some of the Azure services provisioned require globally unique name and a “-suffix” has been added to their names to ensure this uniqueness. Please take note of the suffix generated as you will need it for the following resources in this lab:
 
+First Name				|Last Name		    |Suffix
+------------------------|-------------------|---
+Sh Sakinah	          	|Sy Ishak 	        |**shs**
+Mohamad Syafiq Akmal  	|Sorkawi	        |**sya**
+Mohamad Fauzi	      	|Abdul Manaf	    |**fau**
+M Sani	              	|Johari	        	|**moh**
+Mohammad Taufiq	      	|Kamarudin	    	|**tau**
+Suhaimi	             	|Mohamad	        |**suh**
+Wei Liang	          	|Chew	        	|**wei**
+Noor Fadhilah	      	|Mohd Raes	    	|**fad**
+Choo Chin	          	|Koay	        	|**cho**
+M Nazrul	          	|Hassan	        	|**naz**
+Tengku Bahrizal Ezani 	|Tengku Mohamad		|**ten**
+Zain Isma			  	|Mohamed Lazim		|**zai**
+Zuraiha					|Dzul-kifly			|**zur**
+Vivienne				|Chan				|**pek**
+Chee Boon				|Tan				|**che**
+Yee Onn					|Chong				|**yee**
+Azlan					|Ahmad Rashidi		|**azl**
+Mohd Zamzuri			|Mohd Tairobi		|**mza**
+Adi Razwadi				|Razali				|**adi**
+Suresh					|Vaithu Subramanian	|**sur**
+M Zulqarnain			|Ali				|**mzu**
+Rosiza					|Buang				|**ros**
+Nur Farhah				|Mat Zian - Mat Zin	|**nur**
+Kuan Sin				|Tee				|**tee**
+Mahzan					|Musa				|**mah**
+Nurin Adlina			|Noordin			|**ina**
+Adrian					|Thong				|**adr**
+Ritanormala				|Ismail				|**rit**
+Aimi Amalin				|Khairuddin			|**ama**
+Zeffry Suzi				|Nasir				|**zef**
+
+
 Name	                     |Type
 -----------------------------|--------------------
 SynapseDataFactory-*suffix*	     |Data Factory (V2)
@@ -33,10 +67,52 @@ synapsedatalake*suffix*	         |Data Lake Storage Gen2
 synapsesql-*suffix* |SQL server
 operationalsql-*suffix* |SQL server
 
+## Start-up both ADPDesktop and SynapseDW resources
+In this section you'll need to start-up the following resources to ensure smooth activity during the lab exercises:
+
+Name	                     |Type
+-----------------------------|--------------------
+ADPDesktop*suffix*         | Virtual Machine
+SynapseDW (synapsesql-*suffix*/SynapseDW) | Synapse Analytics
+
+
+**IMPORTANT**|
+-------------|
+**Execute these steps on your host computer**|
+
+
+1.	Open the browser and navigate to <https://portal.azure.com>
+
+    ![](../../Deploy/Media/Lab0-Image01.png)
+
+2.	Log on to Azure using your account credentials
+
+    ![](../../Deploy/Media/Lab0-Image02.png)
+
+3.	Once you have successfully logged on, locate the **Favourites** menu on the left-hand side panel and click the **Resource groups** item to open the **Resource groups** blade.
+
+4. 	Look for the resource group **Placeholder** and filter the resources using the **suffix** of your name.
+
+![](./Media/Lab1-Image56.png)
+
+5.	Click the **ADPDesktop*suffix*** virtual machine.
+
+![](./Media/Lab1-Image59.png)
+
+6.	On the ADPDesktop*suffix* blade, from the Overview menu, click the **Start** button.
+
+![](./Media/Lab1-Image57.png)
+
+7.	Go back to the resource group blade and click on the **SynapseDW (synapsesql-*suffix*/SynapseDW)** resource
+
+![](./Media/Lab1-Image60.png)
+
+8.	On the **SynapseDW (synapsesql-*suffix*/SynapseDW)** click the **Resume** button.
+
+![](./Media/Lab1-Image58.png)
+
 ## Connect to ADPDesktop
 In this section you are going to establish a Remote Desktop Connection to ADPDesktop virtual machine.
-
-**IMPORTANT**: If you are executing the lab in a Spektra CloudLabs environment, you will be automatically connected to the ADPDesktop VM and there is no need to execute the steps below. You can skip to the next section **Install required software onto ADPDesktop**.
 
 **IMPORTANT**|
 -------------|
