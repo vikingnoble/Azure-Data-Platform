@@ -31,6 +31,39 @@ SynapseDataFactory-*suffix*	     |Data Factory (V2)
 synapsedatalake*suffix*	         |Storage Account
 synapsesql-*suffix* |SQL server
 
+First Name				|Last Name		    |Suffix
+------------------------|-------------------|---
+Sh Sakinah	          	|Sy Ishak 	        |**shs**
+Mohamad Syafiq Akmal  	|Sorkawi	        |**sya**
+Mohamad Fauzi	      	|Abdul Manaf	    |**fau**
+M Sani	              	|Johari	        	|**moh**
+Mohammad Taufiq	      	|Kamarudin	    	|**tau**
+Suhaimi	             	|Mohamad	        |**suh**
+Wei Liang	          	|Chew	        	|**wei**
+Noor Fadhilah	      	|Mohd Raes	    	|**fad**
+Choo Chin	          	|Koay	        	|**cho**
+M Nazrul	          	|Hassan	        	|**naz**
+Tengku Bahrizal Ezani 	|Tengku Mohamad		|**ten**
+Zain Isma			  	|Mohamed Lazim		|**zai**
+Zuraiha					|Dzul-kifly			|**zur**
+Vivienne				|Chan				|**pek**
+Chee Boon				|Tan				|**che**
+Yee Onn					|Chong				|**yee**
+Azlan					|Ahmad Rashidi		|**azl**
+Mohd Zamzuri			|Mohd Tairobi		|**mza**
+Adi Razwadi				|Razali				|**adi**
+Suresh					|Vaithu Subramanian	|**sur**
+M Zulqarnain			|Ali				|**mzu**
+Rosiza					|Buang				|**ros**
+Nur Farhah				|Mat Zian - Mat Zin	|**nur**
+Kuan Sin				|Tee				|**tee**
+Mahzan					|Musa				|**mah**
+Nurin Adlina			|Noordin			|**ina**
+Adrian					|Thong				|**adr**
+Ritanormala				|Ismail				|**rit**
+Aimi Amalin				|Khairuddin			|**ama**
+Zeffry Suzi				|Nasir				|**zef**
+
 ## Create Azure Synapse Analytics database objects
 In this section you will connect to Azure Synapse Analytics to create the data warehouse objects used to host and process data.
 
