@@ -36,7 +36,7 @@ synapsedatalake*suffix*	         |Storage Account
 ADPEventHubs-*suffix*	     |Event Hubs Namespace
 SynapseStreamAnalytics-*suffix*	 |Stream Analytics job
 
-
+<br>
 
 First Name				|Last Name		    |Suffix
 ------------------------|-------------------|---
