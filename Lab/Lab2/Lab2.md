@@ -840,7 +840,7 @@ In this section you create a data factory pipeline to copy and transform data in
 
     ![](./Media/Lab2-Image21.png)
 
-4.	From the Activities panel, type “Copy Data” in the search box. Drag the Copy Data activity on to the design surface. This copy activity will copy data files from MDWResources to SynapseDataLake.
+4.	From the Activities panel, type “**Copy Data**” in the search box. Drag the Copy Data activity on to the design surface. This copy activity will copy data files from MDWResources to SynapseDataLake.
 
 5.	Select the Copy Data activity and enter the following details:
     <br>- **General > Name**: Copy Taxi Data Files
@@ -855,7 +855,7 @@ In this section you create a data factory pipeline to copy and transform data in
 
 12.	Repeat the process to create another Copy Data Activity, this time to copy taxi location lookup data from MDWResources to your SQL Data Warehouse.
 
-13.	From the Activities panel, type “Copy Data” in the search box. Drag the Copy Data activity on to the design surface.
+13.	From the Activities panel, type “**Copy Data**” in the search box. Drag the Copy Data activity on to the design surface.
 
 14.	Select the Copy Data activity and enter the following details:
     <br>- **General > Name**: Copy Taxi Location Lookup
@@ -875,7 +875,7 @@ In this section you create a data factory pipeline to copy and transform data in
     ![](./Media/Lab2-Image28.png)
     ![](./Media/Lab2-Image29.png)
 
-16.	From the Activities panel, type “Data Flow” in the search box. Drag the Data Flow activity onto the design surface. 
+16.	From the Activities panel, type “**Data Flow**” in the search box. Drag the Data Flow activity onto the design surface. 
 
 17. On the **Adding Data Flow** blade, select **Use existing Data Flow**. In the **Existing Data Flow** drown-down list, select **TransformNYCTaxiData**. Click **OK**.
 
