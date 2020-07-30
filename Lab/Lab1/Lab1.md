@@ -91,7 +91,7 @@ SynapseDW (synapsesql-*suffix*/SynapseDW) | Synapse Analytics
 
 3.	Once you have successfully logged on, locate the **Favourites** menu on the left-hand side panel and click the **Resource groups** item to open the **Resource groups** blade.
 
-4. 	Look for the resource group **Placeholder** and filter the resources using the **suffix** of your name.
+4. 	Look for the resource group **ADPE2E** and filter the resources using the **suffix** of your name.
 
 ![](./Media/Lab1-Image56.png)
 
