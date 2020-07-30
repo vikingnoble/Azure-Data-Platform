@@ -423,7 +423,7 @@ In this section you will build an Azure Data Factory pipeline to copy a table fr
 
     ![](./Media/Lab1-Image43.png)
 
-4.	From the **Activities** panel, type “Copy Data” in the search box. Drag the **Copy Data** activity on to the design surface.
+4.	From the **Activities** panel, type “**Copy Data**” in the search box. Drag the **Copy Data** activity on to the design surface.
 5.	Select the **Copy Data** activity and enter the following details:
     <br>- **General > Name**: CopyMotorVehicleCollisions
     <br>- **Source > Source dataset**: NYCDataSets_MotorVehicleCollisions
