@@ -38,6 +38,8 @@ SynapseDataFactory-*suffix*	 |Data Factory (V2)
 synapsedatalake*suffix*	     |Storage Account
 ADPDatabricks-*suffix*	     |Databricks Workspace
 
+<br>
+
 First Name				|Last Name		    |Suffix
 ------------------------|-------------------|---
 Sh Sakinah	          	|Sy Ishak 	        |**shs**
