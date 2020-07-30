@@ -30,6 +30,8 @@ synapsedatalake*suffix*	         |Storage Account
 ADPDatabricks-*suffix*	     |Databricks Workspace
 synapsesql-*suffix* |SQL server
 
+<br>
+
 First Name				|Last Name		    |Suffix
 ------------------------|-------------------|---
 Sh Sakinah	          	|Sy Ishak 	        |**shs**
