@@ -33,6 +33,7 @@ synapsedatalake*suffix*	         |Data Lake Storage Gen2
 synapsesql-*suffix* |SQL server
 operationalsql-*suffix* |SQL server
 
+<br>
 
 First Name				|Last Name		    |Suffix
 ------------------------|-------------------|---
@@ -76,6 +77,7 @@ Name	                     |Type
 ADPDesktop*suffix*         | Virtual Machine
 SynapseDW (synapsesql-*suffix*/SynapseDW) | Synapse Analytics
 
+<br>
 
 **IMPORTANT**|
 -------------|
@@ -92,7 +94,7 @@ SynapseDW (synapsesql-*suffix*/SynapseDW) | Synapse Analytics
 
 3.	Once you have successfully logged on, locate the **Favourites** menu on the left-hand side panel and click the **Resource groups** item to open the **Resource groups** blade.
 
-4. 	Look for the resource group **ADPE2E** and filter the resources using the **suffix** of your name.
+4. 	Look for the resource group **PTAZSG-WORKSHOP-ADPE2E-RG** and filter the resources using the **suffix** of your name.
 
 ![](./Media/Lab1-Image56.png)
 
