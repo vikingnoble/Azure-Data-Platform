@@ -26,6 +26,14 @@ Step     | Description
 
 **IMPORTANT**: Some of the Azure services provisioned require globally unique name and a “-suffix” has been added to their names to ensure this uniqueness. Please take note of the suffix generated as you will need it for the following resources in this lab:
 
+Name	                     |Type
+-----------------------------|--------------------
+SynapseDataFactory-*suffix*	     |Data Factory (V2)
+synapsedatalake*suffix*	         |Data Lake Storage Gen2
+synapsesql-*suffix* |SQL server
+operationalsql-*suffix* |SQL server
+
+
 First Name				|Last Name		    |Suffix
 ------------------------|-------------------|---
 Sh Sakinah	          	|Sy Ishak 	        |**shs**
@@ -59,13 +67,6 @@ Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
 
-
-Name	                     |Type
------------------------------|--------------------
-SynapseDataFactory-*suffix*	     |Data Factory (V2)
-synapsedatalake*suffix*	         |Data Lake Storage Gen2
-synapsesql-*suffix* |SQL server
-operationalsql-*suffix* |SQL server
 
 ## Start-up both ADPDesktop and SynapseDW resources
 In this section you'll need to start-up the following resources to ensure smooth activity during the lab exercises:
