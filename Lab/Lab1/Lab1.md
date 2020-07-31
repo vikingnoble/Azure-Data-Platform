@@ -334,30 +334,7 @@ In this section you will build an Azure Data Factory pipeline to copy a table fr
     <br>- **Name**: NYCDataSets_MotorVehicleCollisions
     <br>- **Linked Service**: OperationalSQL_NYCDataSets
     <br>- **Table**: [NYC].[NYPD_MotorVehicleCollisions]
-
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "NYCDataSets_MotorVehicleCollisions",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "OperationalSQL_NYCDataSets",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab1"
-            },
-            "annotations": [],
-            "type": "AzureSqlTable",
-            "schema": [],
-            "typeProperties": {
-                "schema": "NYC",
-                "table": "NYPD_MotorVehicleCollisions"
-            }
-        }
-    }
-    ```
+       
 
 4.	Leave remaining fields with default values and click **Continue**.
 
@@ -372,29 +349,6 @@ In this section you will build an Azure Data Factory pipeline to copy a table fr
     <br>- **Linked Service**: SynapseSQL_SynapseDW
     <br>- **Table**: [NYC].[NYPD_MotorVehicleCollisions]
 
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDW_MotorVehicleCollisions",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseSQL_SynapseDW",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab1"
-            },
-            "annotations": [],
-            "type": "AzureSqlDWTable",
-            "schema": [],
-            "typeProperties": {
-                "schema": "NYC",
-                "table": "NYPD_MotorVehicleCollisions"
-            }
-        }
-    }
-    ```
 
 7.	Leave remaining fields with default values and click **Continue**.
 
