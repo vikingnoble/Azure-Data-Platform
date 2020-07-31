@@ -196,30 +196,7 @@ Dataset |Role           |Linked Service| Description|
     
     ![](./Media/Lab2-Image41.png)
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "MDWResources_NYCTaxiData_Binary",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "MDWResources",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab2"
-            },
-            "annotations": [],
-            "type": "Binary",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nyctaxidata"
-                }
-            }
-        }
-    }
-    ```
+   
 5.	Leave remaining fields with default values.
 
     ![](./Media/Lab2-Image15.png)
@@ -241,32 +218,9 @@ Dataset |Role           |Linked Service| Description|
 
     ![](./Media/Lab2-Image42.png)
 
-    Click **Continue**.
+    Click **OK**.
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDataLake_NYCTaxiData_Binary",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseDataLake",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab2"
-            },
-            "annotations": [],
-            "type": "Binary",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nyctaxidata-raw"
-                }
-            }
-        }
-    }
-    ```
+    
 10.	Leave remaining fields with default values.
 
     ![](./Media/Lab2-Image16.png)
@@ -294,107 +248,9 @@ Dataset |Role           |Linked Service| Description|
 
     ![](./Media/Lab2-Image44.png)
 
-    Click **Continue**.
+    Click **OK**.
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDataLake_NYCTaxiData_CSV",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseDataLake",
-                "type": "LinkedServiceReference"
-            },
-            "annotations": [],
-            "type": "DelimitedText",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nyctaxidata-raw"
-                },
-                "columnDelimiter": ",",
-                "escapeChar": "\\",
-                "firstRowAsHeader": true,
-                "quoteChar": "\""
-            },
-            "schema": [
-                {
-                    "name": "VendorID",
-                    "type": "String"
-                },
-                {
-                    "name": "tpep_pickup_datetime",
-                    "type": "String"
-                },
-                {
-                    "name": "tpep_dropoff_datetime",
-                    "type": "String"
-                },
-                {
-                    "name": "passenger_count",
-                    "type": "String"
-                },
-                {
-                    "name": "trip_distance",
-                    "type": "String"
-                },
-                {
-                    "name": "RatecodeID",
-                    "type": "String"
-                },
-                {
-                    "name": "store_and_fwd_flag",
-                    "type": "String"
-                },
-                {
-                    "name": "PULocationID",
-                    "type": "String"
-                },
-                {
-                    "name": "DOLocationID",
-                    "type": "String"
-                },
-                {
-                    "name": "payment_type",
-                    "type": "String"
-                },
-                {
-                    "name": "fare_amount",
-                    "type": "String"
-                },
-                {
-                    "name": "extra",
-                    "type": "String"
-                },
-                {
-                    "name": "mta_tax",
-                    "type": "String"
-                },
-                {
-                    "name": "tip_amount",
-                    "type": "String"
-                },
-                {
-                    "name": "tolls_amount",
-                    "type": "String"
-                },
-                {
-                    "name": "improvement_surcharge",
-                    "type": "String"
-                },
-                {
-                    "name": "total_amount",
-                    "type": "String"
-                },
-                {
-                    "name": "congestion_surcharge",
-                    "type": "String"
-                }
-            ]
-        }
-    }
-    ```
+    
 15.	Repeat the process to create an Azure SQL Database dataset. It references the NYC.TaxiLocationLookup table in the NYCDataSets database.
 
 16.	Type “Azure SQL Database" in the search box and select **Azure SQL Database**. Click **Continue**.
@@ -411,30 +267,6 @@ Dataset |Role           |Linked Service| Description|
 
 18.	Leave remaining fields with default values.  
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "NYCDataSets_NYCTaxiLocationLookup",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "OperationalSQL_NYCDataSets",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab2"
-            },
-            "annotations": [],
-            "type": "AzureSqlTable",
-            "schema": [],
-            "typeProperties": {
-                "schema": "NYC",
-                "table": "TaxiLocationLookup"
-            }
-        }
-    }
-    ```
-
 19.	Repeat the process to create another dataset, this time referencing the NYC.TaxiDataSummary in your Azure Synapse Analytics database. 
 
 20.	Type “Azure Synapse Analytics” in the search box and select **Azure Synapse Analytics**. Click **Continue**.
@@ -447,80 +279,6 @@ Dataset |Role           |Linked Service| Description|
     <br>- **Table**: [NYC].[TaxiDataSummary]
     <br>- **Import schema**: From connection/store
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDW_NYCTaxiDataSummary",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseSQL_SynapseDW",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab2"
-            },
-            "annotations": [],
-            "type": "AzureSqlDWTable",
-            "schema": [
-                {
-                    "name": "PickUpDate",
-                    "type": "date"
-                },
-                {
-                    "name": "PickUpBorough",
-                    "type": "varchar"
-                },
-                {
-                    "name": "PickUpZone",
-                    "type": "varchar"
-                },
-                {
-                    "name": "PaymentType",
-                    "type": "varchar"
-                },
-                {
-                    "name": "TotalTripCount",
-                    "type": "int",
-                    "precision": 10
-                },
-                {
-                    "name": "TotalPassengerCount",
-                    "type": "int",
-                    "precision": 10
-                },
-                {
-                    "name": "TotalDistanceTravelled",
-                    "type": "decimal",
-                    "precision": 38,
-                    "scale": 2
-                },
-                {
-                    "name": "TotalTipAmount",
-                    "type": "decimal",
-                    "precision": 38,
-                    "scale": 2
-                },
-                {
-                    "name": "TotalFareAmount",
-                    "type": "decimal",
-                    "precision": 38,
-                    "scale": 2
-                },
-                {
-                    "name": "TotalTripAmount",
-                    "type": "decimal",
-                    "precision": 38,
-                    "scale": 2
-                }
-            ],
-            "typeProperties": {
-                "schema": "NYC",
-                "table": "TaxiDataSummary"
-            }
-        }
-    }
-    ```
 
 22.	Leave remaining fields with default values.
 
@@ -538,47 +296,6 @@ Dataset |Role           |Linked Service| Description|
     <br>-**Table**: [NYC].[TaxiLocationLookup]
     <br>-**Import schema**: From connection/store
 
-    Alternatively you can copy and paste the Dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDW_NYCTaxiLocationLookup",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseSQL_SynapseDW",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab2"
-            },
-            "annotations": [],
-            "type": "AzureSqlDWTable",
-            "schema": [
-                {
-                    "name": "LocationID",
-                    "type": "int",
-                    "precision": 10
-                },
-                {
-                    "name": "Borough",
-                    "type": "varchar"
-                },
-                {
-                    "name": "Zone",
-                    "type": "varchar"
-                },
-                {
-                    "name": "service_zone",
-                    "type": "varchar"
-                }
-            ],
-            "typeProperties": {
-                "schema": "NYC",
-                "table": "TaxiLocationLookup"
-            }
-        }
-    }
-    ```
 
 26.	Leave remaining fields with default values.
 
@@ -698,48 +415,6 @@ In this section you are going to create a Mapping Data Flow that will transform 
     |TipAmount|```toDecimal(tip_amount)```|
     |FareAmount|```toDecimal(fare_amount)```|
     |TotalAmount|```toDecimal(total_amount)```|
-
-    Alternatively you can copy the code below and paste it into the DerivedColumn script window:
-
-    ![](./Media/Lab2-Image77.png)
-
-    ```
-    source(output(
-        VendorID as string,
-        tpep_pickup_datetime as string,
-        tpep_dropoff_datetime as string,
-        passenger_count as string,
-        trip_distance as string,
-        RatecodeID as string,
-        store_and_fwd_flag as string,
-        PULocationID as string,
-        DOLocationID as string,
-        payment_type as string,
-        fare_amount as string,
-        extra as string,
-        mta_tax as string,
-        tip_amount as string,
-        tolls_amount as string,
-        improvement_surcharge as string,
-        total_amount as string,
-        congestion_surcharge as string
-    ),
-    allowSchemaDrift: true,
-    validateSchema: false) ~> TaxiDataFiles
-    TaxiDataFiles derive(PaymentType = case (payment_type == '1', 'Credit card'
-        , payment_type == '2', 'Cash'
-        , payment_type == '3', 'No charge'
-        , payment_type == '4', 'Dispute'
-        , payment_type == '5', 'Unknown'
-        , payment_type == '6', 'Voided trip'),
-    PickUpDate = toDate(tpep_pickup_datetime,'yyyy-MM-dd'),
-    PickUpLocationID = toInteger(PULocationID),
-    PassengerCount = toInteger(passenger_count),
-    DistanceTravelled = toDecimal(trip_distance),
-    TipAmount = toDecimal(tip_amount),
-    FareAmount = toDecimal(fare_amount),
-    TotalAmount = toDecimal(total_amount)) ~> TransformColumns
-    ```
 
     Your full list of derived columns should look like this:
 
