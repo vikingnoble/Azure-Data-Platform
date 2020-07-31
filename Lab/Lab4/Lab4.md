@@ -307,30 +307,6 @@ Dataset | Role| Description
 
     ![](./Media/Lab4-Image36.png)
 
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "MDWResources_NYCImages_Binary",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "MDWResources",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab4"
-            },
-            "annotations": [],
-            "type": "Binary",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nycimages"
-                }
-            }
-        }
-    }
-    ```
 
 6.	Repeat the process to create another dataset, this time referencing the **NYCImages** container in your **synapsedatalake-*suffix*** storage account. 
 
@@ -354,30 +330,6 @@ Dataset | Role| Description
 10.	Leave remaining fields with default values.
 
     ![](./Media/Lab4-Image37.png)
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDataLake_NYCImages_Binary",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseDataLake",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab4"
-            },
-            "annotations": [],
-            "type": "Binary",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nycimages"
-                }
-            }
-        }
-    }
-    ```
 
 11.	Repeat the process to create another dataset, this time referencing the **NYCImageMetadata** container in your **synapsedatalake-*suffix*** storage account. 
 
@@ -397,30 +349,6 @@ Dataset | Role| Description
 
     ![](./Media/Lab4-Image39.png)
 
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "SynapseDataLake_NYCImageMetadata_JSON",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "SynapseDataLake",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab4"
-            },
-            "annotations": [],
-            "type": "Json",
-            "typeProperties": {
-                "location": {
-                    "type": "AzureBlobStorageLocation",
-                    "container": "nycimagemetadata"
-                }
-            }
-        }
-    }
-    ```
 15.	Leave remaining fields with default values.
 
 ![](./Media/Lab4-Image73.png)
@@ -439,27 +367,7 @@ Dataset | Role| Description
 
     ![](./Media/Lab4-Image75.png)
 
-    Alternatively you can copy and paste the dataset JSON definition below:
-
-    ```json
-    {
-        "name": "ADPCosmosDB_NYCImageMetadata",
-        "properties": {
-            "linkedServiceName": {
-                "referenceName": "ADPCosmosDB",
-                "type": "LinkedServiceReference"
-            },
-            "folder": {
-                "name": "Lab4"
-            },
-            "annotations": [],
-            "type": "CosmosDbSqlApiCollection",
-            "typeProperties": {
-                "collectionName": "ImageMetadata"
-            }
-        }
-    }
-    ```
+    
 19.	Leave remaining fields with default values.
 
     ![](./Media/Lab4-Image41.png)
