@@ -22,7 +22,7 @@ Power BI | [Create and use analytics reports with Power BI](https://docs.microso
 
 Step     | Description
 -------- | -----
-![](./Media/Orange1.png) | Review the Azure Logic App logic that simmulates the NYSE transaction stream sent to EventHubs
+![](./Media/Orange1.png) | Review the Azure Logic App logic that simulates the NYSE transaction stream sent to EventHubs
 ![](./Media/Orange2.png) | Save simmulated NYSE stock transaction messages into your data lake for future analysis (cold path)
 ![](./Media/Orange3.png) | Send stream of NYSE stock transaction messages to Stream Analytics for real-time analytics (hot path)
 ![](./Media/Orange4.png) | Incorporate Stock Company reference data into your stream processing logic
