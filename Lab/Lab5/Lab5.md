@@ -70,7 +70,7 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
-
+Edward				    |Teo				|**edw**
 
 
 ## Review the Azure LogicApp implementation
