@@ -67,6 +67,7 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
+Edward					|Teo				|**edw**
 
 
 ## Start-up both ADPDesktop and SynapseDW resources
