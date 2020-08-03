@@ -65,6 +65,7 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
+Edward				    |Teo				|**edw**
 
 ## Create Azure Synapse Analytics database objects
 In this section you will connect to Azure Synapse Analytics to create the data warehouse objects used to host and process data.
