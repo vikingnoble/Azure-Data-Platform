@@ -90,8 +90,8 @@ In this section you are going to create an Azure Databricks cluster that will be
 5.	On the **Create Cluster** blade, enter the following connection details:
     <br>- **Cluster Name**: ADPDatabricksCluster
     <br>- **Terminate after**: 30 minutes
-    <br>- **Min Workers**: 1
-    <br>- **Max Workers**: 2
+    <br>- **Min Workers**: 2
+    <br>- **Max Workers**: 4
 
     Leave all other fields with their default values.
 
