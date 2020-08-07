@@ -64,6 +64,7 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
+Edward				    |Teo				|**edw**
 
 **IMPORTANT**: The code snippets below illustrate the simplest and quickest way to establish connections between Databricks and other Azure services. They **ARE NOT** considered best practices as they expose secrets and passwords in plain text. For a secure implementation following the security best practices, please consider the use of Azure Key Vault in conjuntion with Databricks Secret Scopes (<https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html>).
 
@@ -89,8 +90,8 @@ In this section you are going to create an Azure Databricks cluster that will be
 5.	On the **Create Cluster** blade, enter the following connection details:
     <br>- **Cluster Name**: ADPDatabricksCluster
     <br>- **Terminate after**: 30 minutes
-    <br>- **Min Workers**: 1
-    <br>- **Max Workers**: 2
+    <br>- **Min Workers**: 2
+    <br>- **Max Workers**: 4
 
     Leave all other fields with their default values.
 

@@ -67,6 +67,7 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
+Edward					|Teo				|**edw**
 
 
 ## Start-up both ADPDesktop and SynapseDW resources
@@ -106,7 +107,7 @@ SynapseDW (synapsesql-*suffix*/SynapseDW) | Synapse Analytics
 
 ![](./Media/Lab1-Image57.png)
 
-7.	Go back to the resource group blade and click on the **SynapseDW (synapsesql-*suffix*/SynapseDW)** resource
+7.	Go back to the resource group blade and filter the resources by typing in **SynapseDW** then click on the **SynapseDW (synapsesql-*suffix*/SynapseDW)** resource
 
 ![](./Media/Lab1-Image60.png)
 

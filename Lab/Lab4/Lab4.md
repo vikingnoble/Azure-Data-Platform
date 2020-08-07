@@ -72,6 +72,8 @@ Adrian					|Thong				|**adr**
 Ritanormala				|Ismail				|**rit**
 Aimi Amalin				|Khairuddin			|**ama**
 Zeffry Suzi				|Nasir				|**zef**
+Edward				    |Teo				|**edw**
+
 
 ## Create CosmosDB database and collection
 In this section you will create a CosmosDB database called NYC and a collection called ImageMetadata that will host New York image metadata information. 
