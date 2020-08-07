@@ -56,7 +56,7 @@ In this section you will use the Azure Portal to create a Resource Group that wi
 
 5.	On the **Create a resource group** blade, select your subscription in **Subscription** drop down list.
 
-6.	In the Resource group text box enter “ADPE2E-Lab”
+6.	In the Resource group text box enter “**ADPE2E-Lab**”
 
     **IMPORTANT**: If you are deploying this workshop to multiple students using the same subscription then add the student alias to the resources group name so they can identify their own set of resources and avoid confusion during the labs. Example: "ADPE2E-Lab-*Student01*"
 
@@ -70,7 +70,7 @@ In this section you will use the Azure Portal to create a Resource Group that wi
 
     Recommended Regions|
     -------------------|
-    East US|
+    southeastasia|
 
 9.	Proceed to create the resource group by clicking **Review + Create**, and then **Create**.
 
@@ -81,7 +81,7 @@ In this section you will use automated deployment and ARM templates to automate 
 1. You can deploy all Azure services required in each lab by clicking the **Deploy to Azure** button below. 
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fvikingnoble%2FAzure-Data-Platform-Petronas%2Fmaster%2FDeploy%2Fazuredeploy.json" target="_blank">
-    <img src="https://github.com/fabragaMS/ADPE2E/raw/master/Deploy/Media/deploytoazure.png"/>    
+    <img src="https://github.com/vikingnoble/Azure-Data-Platform-Petronas/blob/master/Deploy/Media/deploytoazure.png"/>    
 </a>
 
 2. You will be directed to the Azure portal to deploy the ADPE2E ARM template from this repository. On the **Custom deployment** blade, enter the following details:
