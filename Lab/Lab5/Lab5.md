@@ -38,41 +38,6 @@ SynapseStreamAnalytics-*suffix*	 |Stream Analytics job
 
 <br>
 
-First Name				|Last Name		    |Suffix
-------------------------|-------------------|---
-Sh Sakinah	          	|Sy Ishak 	        |**shs**
-Mohamad Syafiq Akmal  	|Sorkawi	        |**sya**
-Mohamad Fauzi	      	|Abdul Manaf	    |**fau**
-M Sani	              	|Johari	        	|**moh**
-Mohammad Taufiq	      	|Kamarudin	    	|**tau**
-Suhaimi	             	|Mohamad	        |**suh**
-Wei Liang	          	|Chew	        	|**wei**
-Noor Fadhilah	      	|Mohd Raes	    	|**fad**
-Choo Chin	          	|Koay	        	|**cho**
-M Nazrul	          	|Hassan	        	|**naz**
-Tengku Bahrizal Ezani 	|Tengku Mohamad		|**ten**
-Zain Isma			  	|Mohamed Lazim		|**zai**
-Zuraiha					|Dzul-kifly			|**zur**
-Vivienne				|Chan				|**pek**
-Chee Boon				|Tan				|**che**
-Yee Onn					|Chong				|**yee**
-Azlan					|Ahmad Rashidi		|**azl**
-Mohd Zamzuri			|Mohd Tairobi		|**mza**
-Adi Razwadi				|Razali				|**adi**
-Suresh					|Vaithu Subramanian	|**sur**
-M Zulqarnain			|Ali				|**mzu**
-Rosiza					|Buang				|**ros**
-Nur Farhah				|Mat Zian - Mat Zin	|**nur**
-Kuan Sin				|Tee				|**tee**
-Mahzan					|Musa				|**mah**
-Nurin Adlina			|Noordin			|**ina**
-Adrian					|Thong				|**adr**
-Ritanormala				|Ismail				|**rit**
-Aimi Amalin				|Khairuddin			|**ama**
-Zeffry Suzi				|Nasir				|**zef**
-Edward				    |Teo				|**edw**
-
-
 ## Review the Azure LogicApp implementation
 
 In this section you will review the implementation of the LogicApp used to simmulate high-frequency stock purchase transactions. These transactions will be formatted as JSON messages and sent to Event Hubs for processing. All steps required to generate the stock transaction messages have alreay been done for you and no further changes are required in this section.
