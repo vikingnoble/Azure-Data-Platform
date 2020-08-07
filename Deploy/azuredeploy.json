@@ -596,7 +596,7 @@
 					],
 					"properties": {
 						"storageKeyType": "SharedAccessKey",
-						"storageKey": "sp=r&st=2020-08-07T02:51:52Z&se=2022-01-01T10:51:52Z&spr=https&sv=2019-12-12&sr=b&sig=gwfl2MBx3RnxZxZv0pH45dEqrsPOgNFWSxMBMnIWCd0%3D",
+						"storageKey": "?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-01-01T10:46:18Z&st=2020-08-07T02:46:18Z&spr=https&sig=pVtly4KfrrG1XvNvtLzyZouum8%2FXaJaYAIFORGJFixI%3D",
 						"storageUri": "https://adpe2e.blob.core.windows.net/nycdatasets/NYCDataSets.bacpac",
 						"administratorLogin": "[parameters('ADPAdminUserName')]",
 						"administratorLoginPassword": "[parameters('ADPAdminPassword')]",
