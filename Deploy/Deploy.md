@@ -70,7 +70,7 @@ In this section you will use the Azure Portal to create a Resource Group that wi
 
     Recommended Regions|
     -------------------|
-    southeastasia|
+    (Asia Pacific) Southeast Asia|
 
 9.	Proceed to create the resource group by clicking **Review + Create**, and then **Create**.
 
