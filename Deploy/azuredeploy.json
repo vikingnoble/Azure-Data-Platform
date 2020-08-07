@@ -19,7 +19,7 @@
 		"resourceTags": {
 			"type": "object",
 			"defaultValue": {
-            "Project": "Leadership Xchange"
+            "Project": "ADPE2E"
 			}
 		},
 		"UserLastName": {
